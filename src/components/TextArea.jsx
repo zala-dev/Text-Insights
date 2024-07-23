@@ -31,6 +31,7 @@ export default function TextArea({ text, setText }) {
         value={text}
         spellCheck="false"
         placeholder="Enter your text here"
+        wrap="hard"
         onChange={handleOnChange}
       />
       {warningMessage ? <Warning warningMessage={warningMessage} /> : null}
